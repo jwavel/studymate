@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0e1116" />
+    <title>StudyMate — Learn Boldly</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icons/icon-192.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <noscript>This app needs JavaScript enabled.</noscript>
+
+    <div id="app" class="app">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+          <span class="logo">🎓</span>
+          <span>StudyMate</span>
+        </div>
+        <nav class="nav">
+          <a href="#/home" data-link>Home</a>
+          <a href="#/videos" data-link>Live Videos</a>
+          <a href="#/flashcards" data-link>Flashcards</a>
+          <a href="#/quiz" data-link>Quizzes</a>
+          <a href="#/notes" data-link>Notes</a>
+          <a href="#/focus" data-link>Focus</a>
+          <a href="#/about" data-link>About</a>
+        </nav>
+        <div class="sidebar-footer">
+          <button id="toggle-theme" class="btn ghost">Toggle Theme</button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <button id="menu-btn" class="btn icon" aria-label="Toggle menu">☰</button>
+          <div class="search">
+            <input id="global-search" type="search" placeholder="Search modules, notes, or cards…" />
+          </div>
+          <div class="top-actions">
+            <span id="network-status" class="chip">Online</span>
+            <button id="install-btn" class="btn small">Install App</button>
+          </div>
+        </header>
+        <section id="route-outlet" class="route-outlet" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+  </html>
+
+
