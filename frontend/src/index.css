@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg:#0a0a0f; --panel:#1a1a2e; --text:#e0e6ed; --accent:#ff6b6b; --accent2:#4ecdc4; --accent3:#45b7d1;
+  --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --card-bg: rgba(26, 26, 46, 0.8);
+}
+
+html,body,#root{height:100%}
+body{background:var(--bg); color:var(--text); font-family: 'Inter', system-ui, sans-serif;}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--panel); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #ff5252; }
